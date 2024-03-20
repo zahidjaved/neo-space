@@ -1,0 +1,1876 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+ul,
+ol,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Brown";
+  src: url("../fontts/Brown-Regular.woff2") format("woff2"),
+    url("../fontts/Brown-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "RooneySans";
+  src: url("../fontts/RooneySans-Medium.woff2") format("woff2"),
+    url("../fontts/RooneySans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* BANNER CSS */
+
+.banner {
+  height: calc(100vh);
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.banner-content {
+  text-align: center;
+}
+
+.banner-content h2 {
+  font-family: "RooneySans";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 88px;
+  line-height: 84px;
+  color: #ffffff;
+  width: 100%;
+  max-width: 727px;
+  margin-bottom: 42px;
+  text-align: initial;
+}
+
+.banner-content a {
+  font-family: "RooneySans";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 48px;
+  color: #ffffff;
+  text-transform: capitalize;
+  border: 1px solid #ffffff;
+  padding: 26px 75px 29px 75px;
+}
+
+/* MEETING CSS */
+.meeting {
+  padding: 174px 0px 156px;
+  position: relative;
+  background: #EEEEEE;
+}
+
+/* doted line css */
+
+.st0 {
+  animation: c-dashed-line-path 3s ease-in-out forwards alternate;
+  fill: none;
+  stroke: #B6C9D0;
+  stroke-dasharray: 940;
+  stroke-dashoffset: 940;
+  stroke-width: 1;
+}
+
+.st1 {
+  fill: none;
+  stroke: #EEEEEE;
+  /* this must match the background color */
+  stroke-dasharray: 16 10;
+  /* draws a 10px dash line with a 16px gap between */
+  stroke-width: 2;
+  /* make the dashed line slightly bigger than the one it's covering */
+}
+
+.svg_2 .st0 {
+  animation-delay: 1500ms;
+}
+
+
+.svg_1 svg {
+  width: 632px;
+  height: 491px;
+}
+
+.svg_1 svg {
+  position: absolute;
+  left: 39%;
+  top: 18%;
+  transform: translateX(-51%);
+}
+
+.svg_2 svg {
+  width: 461px;
+  height: 438px;
+}
+
+.svg_2 svg {
+  position: absolute;
+  left: 21.5%;
+  top: 38%;
+  transform: translateX(-50%);
+}
+
+
+@keyframes c-dashed-line-path {
+  from {
+    stroke-dashoffset: 940;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* doted line css end here*/
+
+
+
+
+.meeting-outer {
+  width: 100%;
+  max-width: 1385px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.meeting-media {
+  width: 49%;
+}
+
+.meeting-media-image {
+  width: 100%;
+  max-width: 540px;
+  margin-left: auto;
+}
+
+.meeting-content {
+  width: 49%;
+  padding-left: 42px;
+}
+
+.meeting-count {
+  width: 100%;
+  max-width: 135px;
+  padding: 23px 53px 23px;
+  border-radius: 25px;
+  margin-bottom: 40px;
+  border: 9px solid #8fcf4b;
+}
+
+.meeting-count p {
+  font-family: "RooneySans";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 34px;
+  line-height: 26px;
+  color: #8fcf4b;
+}
+
+.meeting-description {
+  width: 100%;
+  max-width: 555px;
+}
+
+.meeting-description p {
+  font-family: "Brown";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 26px;
+  color: #4c4d52;
+}
+
+/* ASSISTS CSS */
+
+.assists {
+  padding: 264px 0px 75px;
+}
+
+.assists-content {
+  padding-top: 60px;
+}
+
+.assists-media-image {
+  width: 100%;
+  max-width: 733px;
+}
+
+/* ESTABLISH CSS */
+
+.establish {
+  width: 100%;
+  max-width: 1210px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.establish-media-image {
+  width: 100%;
+  max-width: 538px;
+}
+
+.establish-content {
+  padding-top: 52px;
+}
+
+/* get started section CSS */
+.get-started {
+  width: 100%;
+  max-width: 1065px;
+  margin-left: auto;
+  margin-right: 170px;
+  margin-top: -11px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.get-started-media {
+  width: 44%;
+}
+
+.get-started-content {
+  width: 53%;
+}
+
+.meeting-description span {
+  display: block;
+  margin-top: 34px;
+  margin-bottom: 54px;
+}
+
+.get-started-media-image {
+  width: 100%;
+  max-width: 431px;
+}
+
+.get-started-content a {
+  padding: 17px 46px 21px;
+  border: 2px solid #72b22d;
+  text-transform: capitalize;
+  font-family: "RooneySans";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 48px;
+  color: #72b22d;
+  margin-top: 52px;
+}
+
+/* all media  */
+
+/* Extra large devices (large laptops and desktops, 2560px and up new) */
+@media only screen and (max-width: 2560px){
+  .svg_2 svg {
+    width: 504px;
+    height: 440px;
+}
+
+.svg_2 svg {
+    left: 19.5%;
+    top: 38%;
+}
+.svg_1 svg {
+  width: 741px;
+  height: 663px;
+}
+.svg_1 svg {
+  left: 36%;
+  top: 14%;
+  transform: translateX(-50%);
+}
+}
+
+/* Extra large devices (large laptops and desktops, 2560px and up) */
+@media only screen and (max-width: 2560px) {
+  .meeting-outer {
+    max-width: 1782px;
+  }
+
+  .meeting-media-image {
+    max-width: 540px;
+    margin: auto;
+  }
+
+  .meeting::after {
+    background-size: 74% 100%;
+    width: 56%;
+    height: 33%;
+    top: 486px;
+    left: 30%;
+  }
+
+  .meeting-content {
+    width: 50%;
+    padding-left: 0px;
+  }
+
+  .establish-content {
+    padding-left: 117px !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1920px and up new) */
+@media only screen and (max-width: 1920px) {
+  .svg_1 svg {
+    width: 632px;
+    height: 491px;
+  }
+  
+  .svg_1 svg {
+    left: 39%;
+    top: 18%;
+  }
+  
+  .svg_2 svg {
+    width: 508px;
+    height: 523px;
+}
+  .svg_2 svg {
+    left: 21.5%;
+    top: 37%;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1920px and up) */
+@media only screen and (max-width: 1920px) {
+  .meeting::after {
+    background-size: 100% 100%;
+    width: 45%;
+    height: 36%;
+    top: 453px;
+    left: 33%;
+  }
+
+  .meeting-outer {
+    max-width: 1385px;
+  }
+
+  .meeting-media-image {
+    width: 100%;
+    max-width: 540px;
+    margin: unset;
+    margin-left: auto !important;
+  }
+
+  .meeting-content {
+    width: 49%;
+    padding-left: 42px;
+  }
+
+  .establish-content {
+    padding-left: 20px !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1800px and up new) */
+@media only screen and (max-width: 1800px) {
+  .svg_2 svg {
+    left: 19.5%;
+    top: 39%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1800px and up) */
+
+@media only screen and (max-width: 1800px) {
+  .get-started {
+    max-width: 1045px;
+    margin-right: 149px;
+    margin-top: -38px;
+  }
+
+  .meeting::after {
+    background-size: 100% 100%;
+    width: 46%;
+    height: 37%;
+    top: 441px;
+    left: 32%;
+    z-index: -1;
+  }
+
+  .establish {
+    max-width: 1148px;
+  }
+
+  .establish-media-image {
+    max-width: 511px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1680px and up new) */
+@media only screen and (max-width: 1680px) {
+  .svg_1 svg {
+    left: 38%;
+    top: 18%;
+  }
+
+  .svg_1 svg {
+    height: 513px;
+  }
+
+  .svg_2 svg {
+    width: 545px;
+    height: 423px;
+  }
+
+  .svg_2 svg {
+    left: 19%;
+    top: 40%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1680px and up) */
+@media only screen and (max-width: 1680px) {
+  .get-started-media-image {
+    max-width: 408px;
+  }
+
+  .get-started {
+    max-width: 1037px;
+    margin-right: 27px;
+    margin-top: -48px;
+  }
+
+  .get-started-content {
+    width: 50%;
+  }
+
+  .meeting-description span {
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+
+  .meeting::after {
+    background-size: 100% 100%;
+    width: 50%;
+    height: 38%;
+    top: 438px;
+    left: 32%;
+    z-index: -1;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1600px and up new) */
+@media only screen and (max-width: 1600px) {
+  .svg_1 svg {
+    height: 472px;
+}
+.svg_1 svg {
+  left: 39%;
+  top: 18%;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1600px and up) */
+@media only screen and (max-width: 1600px) {
+  .meeting {
+    padding: 154px 0px 122px;
+  }
+
+  .meeting-content {
+    padding-left: 69px;
+  }
+
+  .establish-media-image {
+    max-width: 457px;
+  }
+
+  .establish-content {
+    padding-top: 52px;
+    padding-left: 0px !important;
+  }
+
+  .assists {
+    padding: 213px 0px 82px;
+  }
+
+  .meeting::after {
+    background-size: 100% 100%;
+    width: 52%;
+    height: 36%;
+    top: 431px;
+    left: 30%;
+    z-index: -1;
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1500px and up new) */
+@media only screen and (max-width: 1500px){
+  .svg_1 svg {
+    left: 37%;
+    top: 18%;
+}
+.svg_1 svg {
+  height: 488px;
+}
+.svg_2 svg {
+  width: 512px;
+  height: 387px;
+}
+.svg_2 svg {
+  left: 15.5%;
+  top: 41%;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1500px and up) */
+@media only screen and (max-width: 1500px) {
+  .meeting-count {
+    max-width: 123px;
+    padding: 21px 44px 20px;
+    margin-bottom: 37px;
+  }
+
+  .meeting-content {
+    padding-left: 58px;
+  }
+
+  .assists-media-image {
+    max-width: 634px;
+  }
+
+  .establish-media-image {
+    max-width: 405px;
+  }
+
+  .establish-content {
+    padding-top: 23px;
+    padding-left: 0px !important;
+  }
+
+  .get-started {
+    max-width: 975px;
+    margin-right: 52px;
+    margin-top: -25px;
+  }
+
+  .meeting-description span {
+    margin-top: 23px;
+    margin-bottom: 43px;
+  }
+
+  .establish {
+    max-width: 1015px;
+  }
+
+  .meeting::after {
+    background-size: 100% 100%;
+    width: 54%;
+    height: 35%;
+    top: 422px;
+    left: 29%;
+    z-index: -1;
+  }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1440px and up new) */
+@media only screen and (max-width: 1440px) {
+  .svg_1 svg {
+    left: 38%;
+    top: 18%;
+}
+.svg_1 svg {
+  height: 445px;
+  width: 539px;
+}
+
+.svg_2 svg {
+  left: 16.5%;
+  top: 41%;
+}
+.svg_2 svg {
+  width: 430px;
+  height: 336px;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1440px and up) */
+@media only screen and (max-width: 1440px) {
+  .banner {
+    height: calc(79vh - 93px);
+  }
+
+  .banner-content h2 {
+    font-size: 88px;
+    line-height: 84px;
+    max-width: 727px;
+  }
+
+  .meeting {
+    padding: 126px 0px 68px;
+  }
+
+  .meeting-outer {
+    max-width: 1272px;
+  }
+
+  .assists-media-image {
+    max-width: 607px;
+  }
+
+  .establish {
+    max-width: 983px;
+  }
+
+  .assists {
+    padding: 170px 0px 69px;
+  }
+
+  .establish-media-image {
+    max-width: 400px;
+  }
+
+  .get-started-media-image {
+    max-width: 391px;
+  }
+
+  .get-started {
+    max-width: 902px;
+    margin-right: 52px;
+    margin-top: -22px;
+  }
+
+  .meeting::after {
+    background-size: 100% 100%;
+    width: 55%;
+    height: 34%;
+    top: 422px;
+    left: 31%;
+    z-index: -1;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1366px and up new) */
+@media only screen and (max-width: 1366px) {
+  .svg_2 svg {
+    left: 15%;
+    top: 40%;
+}
+.svg_2 svg {
+  width: 429px;
+  height: 329px;
+}
+.svg_1 svg {
+  left: 36%;
+  top: 18%;
+  transform: translateX(-50%);
+}
+.svg_1 svg {
+  height: 442px;
+  width: 536px;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1366px and up) */
+@media only screen and (max-width: 1366px) {
+  .banner-content h2 {
+    font-size: 80px;
+    line-height: 80px;
+    max-width: 727px;
+  }
+
+  .assists {
+    padding: 130px 0px 52px;
+  }
+
+  .establish {
+    max-width: 946px;
+  }
+
+  .establish-media-image {
+    max-width: 385px;
+  }
+
+  .meeting::after {
+    background-size: 100% 100%;
+    width: 58%;
+    height: 33%;
+    top: 407px;
+    left: 31%;
+    z-index: -1;
+  }
+
+  .get-started {
+    max-width: 876px;
+    margin-right: 40px;
+    margin-top: -13px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1280px and up new) */
+@media only screen and (max-width: 1280px){
+  .svg_1 svg {
+    height: 379px;
+    width: 534px;
+}
+.svg_1 svg {
+  left: 38%;
+  top: 19%;
+}
+.svg_2 svg {
+  width: 391px;
+  height: 322px;
+}
+.svg_2 svg {
+  left: 15%;
+  top: 41%;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1280px and up) */
+@media only screen and (max-width: 1280px) {
+  .banner-content h2 {
+    font-size: 74px;
+    line-height: 77px;
+    max-width: 675px;
+  }
+
+  .banner-content a {
+    font-size: 18px;
+    line-height: 48px;
+    padding: 23px 68px 26px 68px;
+  }
+
+  .meeting {
+    padding: 106px 0px 46px;
+  }
+
+  .meeting-outer {
+    max-width: 1163px;
+  }
+
+  .meeting-count {
+    max-width: 123px;
+    padding: 19px 42px 18px;
+    margin-bottom: 38px;
+    border: 8px solid #8fcf4b;
+    text-align: center;
+  }
+
+  .establish-media-image {
+    max-width: 355px;
+  }
+
+  .establish {
+    max-width: 895px;
+  }
+
+  .meeting-content {
+    padding-left: 48px;
+  }
+
+  .get-started {
+    max-width: 839px;
+    margin-right: 34px;
+    margin-top: -8px;
+  }
+
+  .meeting-description p {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .meeting-description span {
+    margin-top: 18px;
+    margin-bottom: 40px;
+  }
+
+  .get-started-content a {
+    padding: 15px 40px 19px;
+    font-size: 18px;
+    line-height: 36px;
+  }
+
+  .meeting::after {
+    background-size: 100% 100%;
+    width: 58%;
+    height: 36%;
+    top: 362px;
+    left: 30%;
+    z-index: -1;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up new) */
+@media only screen and (max-width: 1200px){
+  .svg_1 svg {
+    height: 355px;
+    width: 449px;
+}
+.svg_1 svg {
+  left: 36%;
+  top: 20%;
+}
+.svg_2 svg {
+  width: 408px;
+  height: 311px;
+}
+.svg_2 svg {
+  left: 15%;
+  top: 42%;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .banner {
+    height: calc(75vh - 93px);
+  }
+
+  .meeting-outer {
+    max-width: 1055px;
+  }
+
+  .meeting-count {
+    max-width: 120px;
+    padding: 18px 44px 17px;
+    margin-bottom: 30px;
+    border: 8px solid #8fcf4b;
+  }
+
+  .meeting-description p {
+    font-size: 17px;
+    line-height: 23px;
+  }
+
+  .meeting-content {
+    padding-left: 26px;
+  }
+
+  .assists-content {
+    padding-top: 45px;
+    padding-left: 10px !important;
+  }
+
+  .establish {
+    max-width: 820px;
+  }
+
+  .establish-media-image {
+    max-width: 348px;
+  }
+
+  .get-started {
+    max-width: 760px;
+    margin-right: 28px;
+    margin-top: -9px;
+  }
+
+  .establish-media-image {
+    max-width: 337px;
+  }
+
+  .get-started-content a {
+    padding: 11px 28px 14px;
+    font-size: 17px;
+    line-height: 31px;
+    margin-top: 0px;
+  }
+
+  .meeting::after {
+    background-size: 100% 100%;
+    width: 57%;
+    height: 36%;
+    top: 364px;
+    left: 29%;
+    z-index: -1;
+  }
+
+  .meeting-description span {
+    margin-top: 14px;
+    margin-bottom: 36px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1153px and up new) */
+@media only screen and (max-width: 1153px){
+  .svg_1 svg {
+    height: 352px;
+    width: 435px;
+}
+.svg_2 svg {
+  width: 388px;
+  height: 298px;
+}
+.svg_2 svg {
+  left: 15%;
+  top: 42%;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1152px and up) */
+@media only screen and (max-width: 1152px) {
+  .banner {
+    height: calc(69vh - 93px);
+  }
+
+  .banner-content h2 {
+    font-size: 71px;
+    line-height: 75px;
+    max-width: 633px;
+  }
+
+  .banner-content a {
+    font-size: 18px;
+    line-height: 48px;
+    padding: 20px 62px 24px 62px;
+  }
+
+  .meeting {
+    padding: 102px 0px 42px;
+  }
+
+  .meeting-outer {
+    max-width: 1021px;
+  }
+
+  .meeting-count {
+    max-width: 116px;
+    padding: 16px 43px 15px;
+    margin-bottom: 22px;
+    border: 6px solid #8fcf4b;
+  }
+
+  .meeting-media-image {
+    max-width: 475px;
+  }
+
+  .assists {
+    padding: 81px 0px 36px;
+  }
+
+  .establish-media-image {
+    max-width: 319px;
+  }
+
+  .establish {
+    max-width: 773px;
+  }
+
+  .get-started-media-image {
+    max-width: 336px;
+  }
+
+  .get-started {
+    max-width: 752px;
+    margin-right: 23px;
+    margin-top: 7px;
+  }
+
+  .meeting::after {
+    background-size: 100% 100%;
+    width: 57%;
+    height: 33%;
+    top: 336px;
+    left: 29%;
+    z-index: -1;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1114px and up new) */
+@media only screen and (max-width: 1114px){
+  .svg_2 svg {
+    width: 324px;
+    height: 261px;
+}
+.svg_2 svg {
+  left: 13%;
+  top: 41%;
+}
+.svg_1 svg {
+  height: 319px;
+  width: 446px;
+}
+.svg_1 svg {
+  left: 36%;
+  top: 20%;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1114px and up) */
+@media only screen and (max-width: 1114px) {
+  .banner-content h2 {
+    font-size: 67px;
+    line-height: 71px;
+    max-width: 629px;
+  }
+
+  .establish {
+    max-width: 700px;
+  }
+
+  .establish-media-image {
+    max-width: 285px;
+  }
+
+  .meeting-count {
+    max-width: 110px;
+    padding: 14px 41px 14px;
+    margin-bottom: 18px;
+    border-radius: 24px;
+    border: 5px solid #8fcf4b;
+  }
+
+  .meeting-count p {
+    font-size: 31px;
+    line-height: 24px;
+  }
+
+  .meeting-media-image {
+    max-width: 461px;
+  }
+
+  .get-started-media-image {
+    max-width: 316px;
+  }
+
+  .get-started {
+    max-width: 730px;
+    margin-right: 23px;
+    margin-top: -1px;
+  }
+
+  .meeting-description p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .get-started-content a {
+    padding: 10px 23px 11px;
+    font-size: 17px;
+    line-height: 27px;
+    margin-top: 0px;
+  }
+
+  .assists-media-image {
+    max-width: 493px;
+  }
+
+  .assists {
+    padding: 74px 0px 32px;
+  }
+
+  .meeting::after {
+    background-size: 100% 100%;
+    width: 53%;
+    height: 33%;
+    top: 325px;
+    left: 27%;
+    z-index: -1;
+  }
+}
+
+/* Large devices (laptops/desktops, 1024px and up new) */
+@media only screen and (max-width: 1024px){
+  .svg_1 svg {
+    left: 36%;
+    top: 20%;
+}
+.svg_1 svg {
+  height: 306px;
+  width: 404px;
+}
+.svg_2 svg {
+  width: 295px;
+  height: 257px;
+}
+.svg_2 svg {
+  left: 13%;
+  top: 41%;
+}
+}
+
+/* Large devices (laptops/desktops, 1024px and up) */
+@media only screen and (max-width: 1024px) {
+  .meeting {
+    padding: 92px 0px 40px;
+  }
+
+  .meeting-outer {
+    max-width: 930px;
+  }
+
+  .meeting-media-image {
+    max-width: 442px;
+  }
+
+  .meeting-count {
+    max-width: 104px;
+    padding: 13px 40px 13px;
+    margin-bottom: 20px;
+    border: 5px solid #8fcf4b;
+  }
+
+  .assists {
+    padding: 90px 0px 32px;
+  }
+
+  .assists-media-image {
+    max-width: 454px;
+  }
+
+  .establish-media-image {
+    max-width: 275px;
+  }
+
+  .establish {
+    max-width: 678px;
+  }
+
+  .get-started-media-image {
+    max-width: 319px;
+  }
+
+  .get-started {
+    max-width: 667px;
+    margin-right: 23px;
+    margin-top: 8px;
+  }
+
+  .meeting-description span {
+    margin-top: 10px;
+    margin-bottom: 34px;
+  }
+
+  .meeting-description p {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .get-started-content a {
+    padding: 10px 23px 11px;
+    font-size: 16px;
+    line-height: 27px;
+    margin-top: 0px;
+  }
+
+  .meeting::after {
+    background-size: 100% 100%;
+    width: 56%;
+    height: 34%;
+    top: 319px;
+    left: 28%;
+    z-index: -1;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .banner {
+    height: calc(65vh - 93px);
+  }
+
+  .banner-content h2 {
+    font-size: 65px;
+    line-height: 69px;
+    max-width: 613px;
+  }
+
+  .meeting-outer {
+    max-width: 925px;
+  }
+
+  .assists {
+    padding: 73px 0px 30px;
+  }
+
+  .meeting-count {
+    max-width: 101px;
+    padding: 10px 36px 10px;
+    margin-bottom: 21px;
+    border: 4px solid #8fcf4b;
+    border-radius: 22px;
+  }
+
+  .establish-media-image {
+    max-width: 250px;
+  }
+
+  .establish {
+    max-width: 632px;
+  }
+
+  .meeting-description p {
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .meeting-description p {
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .meeting-description span {
+    margin-top: 9px;
+    margin-bottom: 31px;
+  }
+
+  .meeting-media-image {
+    max-width: 428px;
+  }
+
+  .assists-media-image {
+    max-width: 446px;
+  }
+
+  .get-started {
+    max-width: 664px;
+    margin-right: 23px;
+    margin-top: -1px;
+  }
+
+  .get-started-media-image {
+    max-width: 287px;
+  }
+
+  .meeting::after {
+    display: none;
+    background-size: 100% 100%;
+    width: 53%;
+    height: 35%;
+    top: 315px;
+    left: 27%;
+    z-index: -1;
+  }
+}
+
+/* Large devices (laptops/desktops, 991px and up new) */
+@media only screen and (max-width: 991px){
+  .svg_2 svg {
+    width: 302px;
+    height: 232px;
+}
+.svg_2 svg {
+  left: 13%;
+  top: 42%;
+}
+.svg_1 svg {
+  height: 277px;
+  width: 367px;
+}
+.svg_1 svg {
+  left: 37%;
+  top: 21%;
+}
+}
+
+/* Large devices (laptops/desktops, 991px and up) */
+@media only screen and (max-width: 991px) {
+  .meeting-count {
+    max-width: 106px;
+    padding: 12px 38px 11px;
+    margin-bottom: 18px;
+    border: 5px solid #8fcf4b;
+    border-radius: 22px;
+  }
+
+  .assists-content {
+    padding-top: 33px;
+    padding-left: 6px !important;
+  }
+
+  .meeting::after {
+    background-size: 99% 91%;
+    width: 54%;
+    height: 38%;
+    top: 279px;
+    left: 27%;
+    z-index: -1;
+  }
+}
+
+/* Medium devices (landscape tablets, 884px and up new) */
+@media only screen and (max-width: 884px){
+  .svg_1 svg, .svg_2 svg{
+    display: none;
+}
+}
+
+/* Medium devices (landscape tablets, 884px and up) */
+@media only screen and (max-width: 884px) {
+  .meeting {
+    padding: 85px 0px 36px;
+  }
+
+  .meeting-count {
+    max-width: 100px;
+    padding: 8px 35px 9px;
+    margin-bottom: 16px;
+    border: 5px solid #8fcf4b;
+    border-radius: 18px;
+  }
+
+  .meeting-outer {
+    max-width: 831px;
+  }
+
+  .meeting-description p {
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  .establish-media-image {
+    max-width: 247px;
+  }
+
+  .establish {
+    max-width: 621px;
+  }
+
+  .assists-content {
+    padding-top: 21px;
+    padding-left: 15px !important;
+  }
+
+  .get-started-media-image {
+    max-width: 279px;
+  }
+
+  .get-started {
+    max-width: 661px;
+    margin-right: 10px;
+    margin-top: 45px;
+  }
+
+  .get-started-content a {
+    padding: 8px 17px 10px;
+    font-size: 16px;
+    line-height: 17px;
+    margin-top: 0px;
+  }
+
+  .meeting-description span {
+    margin-top: 5px;
+    margin-bottom: 27px;
+  }
+}
+
+/* Medium devices (landscape tablets, 834px and up) */
+@media only screen and (max-width: 834px) {
+  .banner {
+    height: calc(58vh - 93px);
+  }
+
+  .banner-content h2 {
+    font-size: 62px;
+    line-height: 67px;
+    max-width: 609px;
+  }
+
+  .banner-content a {
+    font-size: 18px;
+    line-height: 48px;
+    padding: 18px 57px 22px 57px;
+  }
+
+  .meeting {
+    padding: 80px 0px 30px;
+  }
+
+  .meeting-outer {
+    max-width: 798px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .banner-content h2 {
+    font-size: 60px;
+    line-height: 66px;
+    max-width: 609px;
+  }
+
+  .meeting-outer {
+    max-width: 725px;
+  }
+
+  .meeting-content {
+    padding-left: 13px;
+  }
+
+  .assists-content {
+    padding-top: 8px;
+    padding-left: 16px !important;
+  }
+
+  .establish {
+    max-width: 589px;
+  }
+
+  .get-started {
+    max-width: 656px;
+    margin-right: 21px;
+    margin-top: 41px;
+  }
+
+  .meeting::after {
+    background-size: 103% 89%;
+    width: 62%;
+    height: 40%;
+    top: 236px;
+    left: 28%;
+    z-index: -1;
+  }
+}
+
+/* Medium devices (landscape tablets, 767px and up) */
+@media only screen and (max-width: 767px) {
+  .meeting-outer {
+    max-width: 688px;
+    display: block;
+  }
+
+  .meeting-count {
+    max-width: 100px;
+    padding: 8px 35px 9px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    border: 5px solid #8fcf4b;
+    border-radius: 18px;
+  }
+
+  .meeting-media {
+    width: 100%;
+  }
+
+  .meeting-media-image {
+    max-width: 491px;
+    margin: 0 auto;
+  }
+
+  .meeting-content {
+    padding-left: 0px;
+    max-width: 497px;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .assists {
+    padding: 71px 0px 61px;
+    display: flex !important;
+    flex-direction: column-reverse;
+  }
+
+  .assists-media-image {
+    max-width: 491px;
+    margin: 0 auto;
+  }
+
+  .establish-media-image {
+    max-width: 475px;
+    margin: 0 auto;
+  }
+
+  .establish-media-image img {
+    border-radius: 15px;
+  }
+
+  .establish {
+    max-width: 751px;
+  }
+
+  .establish-content {
+    max-width: 475px !important;
+    width: 100%;
+    padding-top: 31px;
+    padding-left: 0px !important;
+    margin: 0 auto;
+  }
+
+  .get-started {
+    max-width: 752px;
+    margin: 0 auto;
+    margin-right: 21px;
+    margin-top: 41px;
+    display: block;
+  }
+
+  .get-started-media {
+    width: 100%;
+  }
+
+  .get-started-media-image {
+    max-width: 477px;
+    margin: 0 auto;
+  }
+
+  .get-started-content {
+    width: 100%;
+    max-width: 472px;
+    margin: 0 auto;
+    padding-top: 37px;
+    text-align: center;
+  }
+
+  .meeting-description p {
+    font-size: 17px;
+    line-height: 21px;
+    text-align: initial;
+  }
+
+  .meeting::after {
+    display: none;
+    background-size: 103% 89%;
+    width: 52%;
+    height: 38%;
+    top: 472px;
+    left: 26%;
+    z-index: -1;
+  }
+}
+
+/* Medium devices (landscape tablets, 640px and up) */
+@media only screen and (max-width: 640px) {
+  .get-started-content {
+    text-align: center;
+  }
+
+  .meeting-description p {
+    text-align: initial;
+  }
+}
+
+/* Medium devices (landscape tablets, and large phones 576px and up) */
+@media only screen and (max-width: 576px) {
+  .banner {
+    height: calc(49vh - 93px);
+  }
+
+  .banner-content h2 {
+    font-size: 56px;
+    line-height: 57px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .meeting {
+    padding: 59px 0px 28px;
+  }
+
+  .meeting-count {
+    max-width: 100px;
+    margin: 0 auto;
+    padding: 8px 35px 9px;
+    margin-bottom: 16px;
+    border: 5px solid #8fcf4b;
+    border-radius: 18px;
+  }
+
+  .meeting-description p {
+    text-align: center;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 540px and up) */
+@media only screen and (max-width: 540px) {
+  .meeting-outer {
+    max-width: 100%;
+    display: block;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 480px and up) */
+@media only screen and (max-width: 480px) {
+  .banner-content h2 {
+    font-size: 53px;
+    line-height: 60px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .meeting {
+    padding: 52px 0px 28px;
+  }
+
+  .establish-media-image {
+    max-width: 424px;
+  }
+
+  .meeting-content {
+    max-width: 458px;
+  }
+
+  .meeting-media-image {
+    max-width: 440px;
+  }
+
+  .establish-content {
+    max-width: 440px !important;
+  }
+
+  .assists-media-image {
+    max-width: 440px;
+  }
+
+  .get-started-content {
+    max-width: 447px;
+  }
+
+  .get-started-media-image {
+    max-width: 426px;
+  }
+}
+
+/*  small Mobile devices( small Mobile devices, 425px and up) */
+@media only screen and (max-width: 428px) {
+  .banner-content h2 {
+    font-size: 43px;
+    line-height: 47px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .banner-content a {
+    font-size: 18px;
+    line-height: 45px;
+    padding: 14px 42px 17px 42px;
+  }
+
+  .meeting {
+    padding: 42px 0px 26px;
+  }
+
+  .meeting-media-image {
+    max-width: 390px;
+    margin: 0 auto;
+  }
+
+  .meeting-description {
+    width: 100%;
+    max-width: 392px;
+    margin: 0 auto;
+  }
+
+  .assists-media-image {
+    max-width: 390px;
+    margin: 0 auto;
+  }
+
+  .get-started-content {
+    max-width: 395px;
+  }
+
+  .establish-content {
+    max-width: 395px !important;
+  }
+
+  .get-started-content a {
+    padding: 9px 23px 10px;
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: 0px;
+  }
+
+  .establish-media-image {
+    max-width: 373px;
+  }
+
+  .get-started-media-image {
+    max-width: 376px;
+  }
+
+  .meeting-count {
+    max-width: 86px;
+    padding: 6px 32px 7px;
+    border: 4px solid #8fcf4b;
+    border-radius: 16px;
+  }
+
+  .meeting-count p {
+    font-size: 26px;
+    line-height: 27px;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 393px and up) */
+@media only screen and (max-width: 393px) {
+  .meeting-media-image {
+    max-width: 358px;
+  }
+
+  .meeting-description {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .assists-media-image {
+    max-width: 358px;
+  }
+
+  .assists {
+    padding: 35px 0px 34px;
+  }
+
+  .establish {
+    max-width: 100%;
+  }
+
+  .establish-media-image {
+    max-width: 350px;
+  }
+
+  .establish-content {
+    max-width: 342px !important;
+  }
+
+  .get-started-content {
+    max-width: 360px;
+  }
+
+  .get-started-media-image {
+    max-width: 350px;
+  }
+}
+
+/* extra small Mobile devices( extra small Mobile devices, 360px and up) */
+@media only screen and (max-width: 360px) {
+  .banner-content h2 {
+    font-size: 38px;
+    line-height: 42px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .banner-content a {
+    font-size: 17px;
+    line-height: 21px;
+    padding: 10px 30px 12px 30px;
+  }
+
+  .banner {
+    height: calc(39vh - 93px);
+  }
+
+  .meeting {
+    padding: 23px 0px 14px;
+  }
+
+  .meeting-media-image {
+    max-width: 323px;
+  }
+
+  .meeting-description {
+    width: 100%;
+    max-width: 334px;
+  }
+
+  .establish-media-image {
+    max-width: 323px;
+  }
+
+  .assists-media-image {
+    max-width: 323px;
+  }
+
+  .get-started-content {
+    max-width: 334px;
+  }
+
+  .get-started-media-image {
+    max-width: 323px;
+  }
+
+  .get-started-content a {
+    padding: 9px 20px 9px;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 0px;
+  }
+}
+
+/*  extra small Mobile devices( extra small Mobile devices, 320px and up) */
+@media only screen and (max-width: 320px) {
+  .banner-content h2 {
+    font-size: 35px;
+    line-height: 38px;
+  }
+
+  .banner-content a {
+    font-size: 17px;
+    line-height: 21px;
+    padding: 8px 26px 10px 26px;
+  }
+
+  .banner {
+    height: calc(36vh - 93px);
+  }
+
+  .meeting-media-image {
+    max-width: 300px;
+  }
+
+  .meeting-description {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .assists-media-image {
+    max-width: 300px;
+  }
+
+  .meeting-content {
+    max-width: 100%;
+  }
+
+  .establish-content {
+    max-width: 300px !important;
+  }
+
+  .establish-media-image {
+    max-width: 299px;
+  }
+
+  .get-started {
+    max-width: 100%;
+  }
+
+  .get-started-media-image {
+    max-width: 299px;
+  }
+
+  .get-started-content {
+    max-width: 300px;
+  }
+
+}

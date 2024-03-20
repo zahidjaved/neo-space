@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+
+  <!-- banner section -->
+  <section class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="banner-content">
+          <h2>How the neospace process works </h2>
+          <a href="#">About Us</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="banner-content">
+          <h2>How the neospace process works </h2>
+          <a href="#">About Us</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+    <section class="meeting">
+        <!-- svg doted lines -->
+    <div id="section2">
+
+        <div class="svg_1" id="animateElement">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 328.9 257.5" style="enable-background:new 0 0 328.9 257.5;" xml:space="preserve">
+                <style type="text/css">
+                  .st1 {
+                    stroke-width: 3;
+                    stroke-miterlimit: 10;
+                    stroke-dasharray: 12;
+                  }
+                </style>
+                <path class="st0" d="M313.8,24.1c0,0,34.9,129.3-188.8,183.7c0,0-42.6,15.4-111.9,25.7" />
+                <path class="st1" d="M313.8,24.1c0,0,34.9,129.3-188.8,183.7c0,0-42.6,15.4-111.9,25.7" />
+              </svg>
+            </div>
+        
+            <div class="svg_2" id="animateElement">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 328.9 257.5" style="enable-background:new 0 0 328.9 257.5;" xml:space="preserve">
+                <style type="text/css">
+                  .st1 {
+                    stroke-width: 3;
+                    stroke-miterlimit: 10;
+                    stroke-dasharray: 12;
+                  }
+                </style>
+                <path class="st0" d="M86.3,10.6C59,25.7,28.6,48.8,20.5,79.3c-9.2,34.8,20.3,62.3,49.5,77.8c38.3,20.3,81.5,29.4,123.4,40.5
+          c43.2,11.4,84.4,27.2,122.8,49.4" />
+                <path class="st1" d="M86.3,10.6C59,25.7,28.6,48.8,20.5,79.3c-9.2,34.8,20.3,62.3,49.5,77.8c38.3,20.3,81.5,29.4,123.4,40.5
+          c43.2,11.4,84.4,27.2,122.8,49.4" />
+              </svg>
+            </div>
+        </div>
+        
+        
+            <script>
+              // Get the element to be animated
+          const animateElement = document.getElementById('animateElement');
+          
+          // Define the Intersection Observer callback
+          const callback = (entries, observer) => {
+              entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                      // Element is in the viewport, start animation
+                      animateElement.style.animation = 'c-dashed-line-path 2s ease forwards';
+                  }
+              });
+          };
+          
+          // Create an Intersection Observer
+          const observer = new IntersectionObserver(callback);
+          
+          // Observe the section you want to trigger the animation
+          const targetSection = document.getElementById('section2'); // Change this to your desired section
+          if (targetSection) {
+              observer.observe(targetSection);
+          }
+          
+            </script>
+
+</section>
+</body>
+</html>
